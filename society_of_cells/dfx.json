@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "dfx": "0.10.0",
+  "canisters": {
+    "society_of_cells": {
+      "type": "motoko",
+      "main": "src/society_of_cells/main.mo"
+    },
+    "society_of_cells_assets": {
+      "type": "assets",
+      "source": [
+        "src/society_of_cells_assets/assets"
+      ],
+      "dependencies": [
+        "society_of_cells"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
